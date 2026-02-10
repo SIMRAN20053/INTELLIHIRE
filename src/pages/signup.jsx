@@ -20,7 +20,7 @@ function Signup(){
 </div>
 <div className="details">
     <div className="F-name">
-        <lable>Full Name</lable><br/>
+        <label>Full Name</label><br/>
         <input type="text" placeholder="Enter your name" className="name"></input>
     </div>
        <div className="Email">
@@ -41,10 +41,10 @@ function Signup(){
  </div>
  <div className="policy">
     <input type="checkbox" id="policy"/>
-    <label htmlFor="policy">I agree to the <a href="#">Terms of Service</a>and <a href="#">Privacy Policy</a></label>
+    <label htmlFor="policy">I agree to the <a href="#">Terms of Service</a> and <br/><a href="#">Privacy Policy</a></label>
  </div>
  <div className="Form-action">
-    <button type="submit">Create Account</button>
+    <button type="submit" className="Submit">Create Account</button>
  </div>
 </div>
 <div className="signup-divider">
@@ -53,11 +53,11 @@ function Signup(){
 <div className="signup-social">
     <button className="G-btn">
          <FcGoogle/>
-         <span>Google</span>
+         <span className="G-input">Google</span>
     </button>
     <button className="F-btn">
         <FaFacebook/>
-        <span>
+        <span className="Face-input">
             Facebook
         </span>
     </button>
