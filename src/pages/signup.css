@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.signup-page{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3rem;
+}
+.signup-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
