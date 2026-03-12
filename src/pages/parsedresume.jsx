@@ -90,6 +90,21 @@ function Parsed(){
                 </div>
                 <div className="work-experience">
                     <h3 className="work-logo">🏢Work Experience</h3>
+                    <div className="work-card">
+                        <div className="work1">
+                          <div className="work-card">
+                            <div className="work-card1">
+                                <div className="rightc"></div>
+                                <p>Senior Full Stack Developer</p>
+                                <p>TechVision Inc.</p>
+                                <p>Led a team of 5 developers in building a modern SaaS platform using React and Node.js. Implemented microservices architecture resulting in 40% improvement in system scalability. Mentored junior developers and established coding best practices across the team.</p>
+                              </div>
+                              <div className="leftc">
+                                <span>Jan 2021 - Present</span>
+                            </div>
+                            </div>  
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
