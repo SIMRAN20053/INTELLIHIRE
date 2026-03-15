@@ -2,7 +2,6 @@ from flask import Blueprint,request,jsonify
 from models.user_model import User
 from database.db import db
 import bcrypt
-
 auth=Blueprint("auth", __name__)
 @auth.route("/signup", methods=["POST"])
 def signup():
