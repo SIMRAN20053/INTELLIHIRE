@@ -9,6 +9,8 @@ def signup():
     name=data.get("name")
     email=data.get("email")
     password=data.get("password")
+    role=data.get("role")
+    company_name=data.get("company")
     hashed_password=bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
     existing_user=User.query.filter_by(email=email).first()
     if existing_user:
@@ -16,7 +18,9 @@ def signup():
     new_user=User(
         name=name,
         email=email,
-        password_hashed=hashed_password.decode("utf-8")
+        password_hashed=hashed_password.decode("utf-8"),
+        role=role,
+        company_name=company_name
     )
     db.session.add(new_user)
     db.session.commit()
