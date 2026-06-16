@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import{FcGoogle} from"react-icons/fc";
 import{FaFacebook} from"react-icons/fa";
+import {Link} from "react-router-dom";
 import './login.css';
 function Login(){
     const[email,setEmail]=useState("");
@@ -58,9 +59,6 @@ function Login(){
     <input type="checkbox" id="remember"/>
     <label htmlFor="remember">Remember me</label>
 </div>
-<div className="forgot-password">
-    <a href="#">Forgot Password ?</a>
-</div>
 </div>
 <div className="form-action">
     <button  type="submit" className="submit-btn" onClick={handleLogin}>Login</button>
@@ -69,18 +67,8 @@ function Login(){
 <div className="auth-divider">
     <p>-----------or continue with-----------</p>
 </div>
-<div className="auth-social">
-<button className="google-btn">
-    <FcGoogle/>
-    <span className="google-input"> Google</span>
-</button>
-<button className="facebook-btn">
-    <FaFacebook/>
-    <span className="facebook-input">Facebook</span>
-</button>
-</div>
 <div className="auth-footer">
-    <p>Don't have an account? <a href="#">Sign up</a></p>
+   <Link to="/signup">Sign up</Link>
 </div>
  </div>
         </div>
