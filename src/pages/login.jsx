@@ -42,16 +42,17 @@ function Login(){
     <form>
         <div className="email">
  <label>Email Address</label><br/>
- <input type="email" placeholder="you@company.com" className="email-input"/><br/>
+ <input type="email" placeholder="you@company.com" className="email-input"><br/>
  value={email}
  onChange={(e)=>setEmail(e.target.value)}
-
+ </input>
  </div>
  <div className="pass">
   <label>Password</label><br/>
- <input type="password" placeholder="Enter your password" className="pass-input"/>
- value={password}
+ <input type="password" placeholder="Enter your password" className="pass-input">
+  value={password}
  onChange={(e)=>setPassword(e.target.value)}
+ </input>
  </div>
     </form>
     <div className="form-options">
