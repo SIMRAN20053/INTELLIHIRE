@@ -26,10 +26,25 @@ function Signup(){
         headers:{
         "Content-Type":"application/json"
         },
-        
+        body:JSON.stringify({
+            name:fullname,
+            email:email,
+            password:password,
+            role:role,
+            company:companyname,
         }
         )
-
+        }
+        );
+        const data =await response.json();
+        if (response.ok){
+            if(role==="Recruiter"){
+                navigate("/uploadjob")
+            }else{
+                navigate("/dashboard")
+            }
+        }
+        console.log(data);
     }
     return(
         <>
@@ -49,44 +64,48 @@ function Signup(){
 <div className="details">
     <div className="F-name">
         <label>Full Name</label><br/>
-        <input type="text" placeholder="Enter your name" className="name">
+        <input type="text" placeholder="Enter your name" className="name"
          value={fullname}
-        onChange={(e)=>setFullname(e.target.value)}</input>
+        onChange={(e)=>setFullname(e.target.value)}
+          />
     </div>
        <div className="Email">
  <label>Email Address</label><br/>
- <input type="email" placeholder="you@company.com" className="E-input">
+ <input type="email" placeholder="you@company.com" className="E-input"
  value={email}
- onChange={(e)=>setEmail(e.target.value)}</input>
+ onChange={(e)=>setEmail(e.target.value)}
+ />
  </div>
  {role==="Recruiter" && (
     <div className="company">
     <label>Company Name</label><br/>
-     <input type="text" placeholder="Your Company " className="C-input">
+     <input type="text" placeholder="Your Company " className="C-input"
        value={companyname}
-     onChange={(e)=>setCompanyname(e.target.value)}</input>
+     onChange={(e)=>setCompanyname(e.target.value)}
+     />
  </div>
  )
  }
  <div className="Pass">
   <label>Password</label><br/>
- <input type="password" placeholder="Create a strong password" className="P-input"> value={password}
+ <input type="password" placeholder="Create a strong password" className="P-input" value={password}
  onChange={(e)=>setPassword(e.target.value)}
- </input>
+ />
  </div>
  <div className="Pass-confirm">
   <label> Confirm Password</label><br/>
- <input type="password" placeholder="Re-enter your password" className="passwordconfirm-input">
+ <input type="password" placeholder="Re-enter your password" className="passwordconfirm-input"
  value={confirmpassword}
  onChange={(e)=>setConfirmPassword(e.target.value)}
- </input>
+ />
+ {error &&<p style={{color:"red"}}>{error}</p>}
  </div>
  <div className="policy">
     <input type="checkbox" id="policy"/>
     <label htmlFor="policy">I agree to the <a href="#">Terms of Service</a> and <br/><a href="#">Privacy Policy</a></label>
  </div>
  <div className="Form-action">
-    <button type="submit" className="Submit" onClick={handleSignup}>Create Account</button>
+    <button type="button" className="Submit" onClick={handleSignup}>Create Account</button>
  </div>
 </div>
 <div className="signup-divider">
