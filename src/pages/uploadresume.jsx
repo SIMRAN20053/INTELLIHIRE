@@ -3,8 +3,6 @@ import "./uploadresume.css";
 function Uploadresume(){
     return(
        <div className="upload-resume-page-container">
-
-      {/* SIDEBAR */}
       <aside className="upload-resume-sidebar">
 
         <h1 className="sidebar-logo-text">IntelliHire</h1>
@@ -20,11 +18,8 @@ function Uploadresume(){
 
       </aside>
 
-
-      {/* MAIN SECTION */}
       <main className="upload-resume-main-section">
 
-        {/* NAVBAR */}
         <header className="upload-resume-navbar">
 
           <div className="navbar-left-section">
@@ -41,11 +36,9 @@ function Uploadresume(){
 
 
 
-        {/* PAGE CONTENT */}
         <div className="upload-resume-page-content">
 
 
-          {/* MAIN UPLOAD CARD */}
           <section className="resume-upload-main-card">
 
             <h2 className="resume-upload-title">Upload Your Resume</h2>
@@ -55,7 +48,6 @@ function Uploadresume(){
             </p>
 
 
-            {/* DRAG DROP AREA */}
             <div className="resume-drag-drop-area">
 
               <div className="upload-icon-circle">📄</div>
@@ -78,7 +70,6 @@ function Uploadresume(){
 
 
 
-          {/* FILE REQUIREMENTS */}
           <section className="file-requirements-card">
 
             <h3 className="requirements-title">📋 File Requirements</h3>
@@ -97,7 +88,6 @@ function Uploadresume(){
 
 
 
-          {/* FEATURE HIGHLIGHTS */}
           <section className="resume-feature-highlights">
 
             <div className="feature-card">

@@ -3,8 +3,6 @@ import "./jobdetail.css";
 function Jobdetails(){
     return(
        <div className="jobdetail-page-container">
-
-      {/* SIDEBAR */}
       <aside className="jobdetail-sidebar">
 
         <h1 className="sidebar-logo-text">IntelliHire</h1>
@@ -19,13 +17,7 @@ function Jobdetails(){
         </nav>
 
       </aside>
-
-
-
-      {/* MAIN */}
       <main className="jobdetail-main-section">
-
-        {/* NAVBAR */}
         <header className="jobdetail-navbar">
 
           <h2 className="navbar-page-title">Job Details</h2>
@@ -37,19 +29,10 @@ function Jobdetails(){
           </div>
 
         </header>
-
-
-
-        {/* PAGE CONTENT */}
         <div className="jobdetail-content-section">
-
-          {/* BACK LINK */}
           <div className="back-link">
             ← Back to Job Listings
           </div>
-
-
-          {/* JOB HEADER CARD */}
           <div className="job-header-card">
 
             <div className="job-header-left">
@@ -80,10 +63,6 @@ function Jobdetails(){
               </div>
 
             </div>
-
-
-
-            {/* ACTION BUTTONS */}
             <div className="job-action-buttons">
 
               <button className="apply-button">
@@ -101,18 +80,8 @@ function Jobdetails(){
             </div>
 
           </div>
-
-
-
-          {/* MAIN GRID */}
           <div className="jobdetail-main-grid">
-
-
-            {/* LEFT COLUMN */}
             <div className="jobdetail-left-column">
-
-
-              {/* DESCRIPTION */}
               <div className="jobdetail-card">
 
                 <h3 className="section-title">
@@ -130,10 +99,6 @@ function Jobdetails(){
                 </p>
 
               </div>
-
-
-
-              {/* RESPONSIBILITIES */}
               <div className="jobdetail-card">
 
                 <h3 className="section-title">
@@ -152,10 +117,6 @@ function Jobdetails(){
                 </ul>
 
               </div>
-
-
-
-              {/* REQUIREMENTS */}
               <div className="jobdetail-card">
 
                 <h3 className="section-title">
@@ -175,14 +136,7 @@ function Jobdetails(){
               </div>
 
             </div>
-
-
-
-            {/* RIGHT COLUMN */}
             <div className="jobdetail-right-column">
-
-
-              {/* MATCH SCORE */}
               <div className="match-score-card">
 
                 <p className="match-label">
@@ -198,10 +152,6 @@ function Jobdetails(){
                 </p>
 
               </div>
-
-
-
-              {/* JOB OVERVIEW */}
               <div className="job-overview-card">
 
                 <h3>Job Overview</h3>
@@ -237,10 +187,6 @@ function Jobdetails(){
                 </div>
 
               </div>
-
-
-
-              {/* COMPANY CARD */}
               <div className="jobdetail-card">
 
                 <h3>About TechCorp Inc.</h3>

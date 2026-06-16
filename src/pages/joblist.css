@@ -10,9 +10,6 @@ display:flex;
 min-height:100vh;
 background:#f7fafc;
 }
-
-/* SIDEBAR */
-
 .joblist-sidebar{
 width:250px;
 background:#1a202c;
@@ -44,19 +41,11 @@ background:#2d3748;
 .sidebar-active-item{
 background:#2d3748;
 }
-
-
-/* MAIN */
-
 .joblist-main-section{
 flex:1;
 display:flex;
 flex-direction:column;
 }
-
-
-/* NAVBAR */
-
 .joblist-navbar{
 display:flex;
 justify-content:space-between;
@@ -94,19 +83,12 @@ justify-content:center;
 font-weight:600;
 }
 
-
-/* CONTENT */
-
 .joblist-content-section{
 padding:30px;
 display:flex;
 flex-direction:column;
 gap:20px;
 }
-
-
-/* SEARCH */
-
 .job-search-container{
 display:flex;
 gap:10px;
@@ -132,9 +114,6 @@ border-radius:6px;
 cursor:pointer;
 }
 
-
-/* FILTERS */
-
 .job-filter-chips{
 display:flex;
 gap:10px;
@@ -153,18 +132,11 @@ cursor:pointer;
 background:#667eea;
 color:white;
 }
-
-
-/* RESULTS */
-
 .job-results-header{
 display:flex;
 justify-content:space-between;
 align-items:center;
 }
-
-
-/* JOB CARD */
 
 .job-cards-container{
 display:flex;
@@ -218,18 +190,10 @@ margin-left:auto;
 font-size:13px;
 color:#a0aec0;
 }
-
-
-/* DESCRIPTION */
-
 .job-description{
 margin-top:12px;
 color:#4a5568;
 }
-
-
-/* SKILLS */
-
 .job-skills-tags{
 display:flex;
 gap:8px;
@@ -243,10 +207,6 @@ padding:6px 12px;
 border-radius:16px;
 font-size:13px;
 }
-
-
-/* FOOTER */
-
 .job-card-footer{
 display:flex;
 justify-content:space-between;
